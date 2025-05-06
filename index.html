@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FlowIn – Wellness Together</title>
+  <title>FlowIn – The Holistic Hub</title>
   <style>
     body {
       margin: 0;
@@ -28,26 +29,38 @@
       color: #71dfc2;
       margin-top: 2rem;
     }
-    p {
-      max-width: 700px;
-      margin: 0 auto 1.5rem;
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
       padding: 0 1rem;
     }
     .cta {
       background-color: #1f2e30;
       border-top: 1px solid #2c4445;
       padding: 2rem 1rem;
-      text-align: center;
     }
-    .cta a {
+    form {
+      margin-top: 1rem;
+    }
+    input[type="email"] {
+      padding: 0.75rem;
+      width: 250px;
+      max-width: 90%;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+    }
+    button {
       display: inline-block;
       background: #71dfc2;
       color: #0f1a1c;
       padding: 0.75rem 1.5rem;
-      margin-top: 1rem;
       text-decoration: none;
       font-weight: bold;
       border-radius: 8px;
+      border: none;
+      cursor: pointer;
     }
     footer {
       text-align: center;
@@ -59,18 +72,18 @@
 </head>
 <body>
 
-  <header>
+  <header class="container">
     <img src="logo_insta.jpeg" alt="FlowIn Logo" />
     <h1>FlowIn</h1>
-    <p>The holistic all-in-one platform</p>
+    <p>The holistic hub for modern healing</p>
   </header>
 
-  <section>
+  <section class="container">
     <h2>🌱 Our Mission</h2>
     <p>Healing happens when ancient wisdom meets modern tools. FlowIn exists to reconnect people with holistic practices—making them accessible, personalized, and part of everyday life.</p>
 
     <h2>📲 What We Offer</h2>
-    <p>Our all-in-one platform that helps you discover events, connect with professionals, book sessions, and stay inspired with curated wellness content.</p>
+    <p>Our all-in-one mobile app helps you discover events, connect with professionals, book sessions, and stay inspired with curated wellness content.</p>
 
     <h2>🤝 For Practitioners & Venues</h2>
     <p>We empower holistic professionals and venues to grow their impact, manage bookings, and be part of a vibrant wellness network.</p>
@@ -79,10 +92,15 @@
     <p>Join a community where people share experiences, follow their favorite guides, and receive personalized wellness suggestions.</p>
   </section>
 
-  <section class="cta">
+  <section class="cta container">
     <h2>🚀 Be the First to Know</h2>
-    <p>We're currently in a feedback phase. Sign up to get updates and early access when we launch.</p>
-    <a href="https://forms.gle/your-form-link-here" target="_blank">Sign Up for Updates</a>
+    <p>We're currently in a feedback phase. Enter your email to get updates and early access when we launch.</p>
+
+    <form action="mailto:info@flowinapp.com" method="post" enctype="text/plain">
+      <input type="email" name="email" placeholder="Your email address" required />
+      <br />
+      <button type="submit">Sign Up for Updates</button>
+    </form>
   </section>
 
   <footer>
